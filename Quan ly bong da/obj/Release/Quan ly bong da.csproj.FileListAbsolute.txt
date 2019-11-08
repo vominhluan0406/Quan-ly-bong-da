@@ -1,0 +1,24 @@
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\bin\Release\Quan ly bong da.exe.config
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\bin\Release\Quan ly bong da.exe
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\bin\Release\Quan ly bong da.pdb
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\bin\Release\EntityFramework.dll
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\bin\Release\System.Data.SQLite.dll
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\bin\Release\System.Data.SQLite.EF6.dll
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\bin\Release\System.Data.SQLite.Linq.dll
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\bin\Release\EntityFramework.xml
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\bin\Release\System.Data.SQLite.xml
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\bin\Release\System.Data.SQLite.dll.config
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\obj\Release\Quan ly bong da.csprojAssemblyReference.cache
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\obj\Release\Quan_ly_bong_da.CapnhatCLB.resources
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\obj\Release\Quan_ly_bong_da.fLogin.resources
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\obj\Release\Quan_ly_bong_da.fMain.resources
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\obj\Release\Quan_ly_bong_da.fThemcauthu.resources
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\obj\Release\Quan_ly_bong_da.fThongtinCLB.resources
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\obj\Release\Quan_ly_bong_da.Properties.Resources.resources
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\obj\Release\Quan ly bong da.csproj.GenerateResource.cache
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\obj\Release\Quan ly bong da.csproj.CoreCompileInputs.cache
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\obj\Release\Quan ly bong da.csproj.CopyComplete
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\obj\Release\Quan ly bong da.exe
+C:\Users\LuanVo\Desktop\New folder\Quan ly bong da\Quan ly bong da\obj\Release\Quan ly bong da.pdb
