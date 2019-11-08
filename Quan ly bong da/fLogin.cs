@@ -86,6 +86,7 @@ namespace Quan_ly_bong_da
                 }
                 else
                 {
+                    Bien.user = users;
                     this.Hide();
                     f.ShowDialog();
                     this.Show();

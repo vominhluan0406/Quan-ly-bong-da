@@ -326,6 +326,12 @@ namespace Quan_ly_bong_da
             }
         }
 
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DoiMK f = new DoiMK();
+            f.ShowDialog();
+        }
+
         private void panel2_MouseMove(object sender, MouseEventArgs e)
         {
             if (move == 1)

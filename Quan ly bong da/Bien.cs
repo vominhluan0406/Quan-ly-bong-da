@@ -18,5 +18,6 @@ namespace Quan_ly_bong_da
         public static string CapNhat = null;
         public static int a;
         public static int b;
+        public static string user=null;
     }
 }
