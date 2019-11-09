@@ -34,7 +34,25 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.doi10 = new System.Windows.Forms.PictureBox();
+            this.doi6 = new System.Windows.Forms.PictureBox();
+            this.doi11 = new System.Windows.Forms.PictureBox();
+            this.doi8 = new System.Windows.Forms.PictureBox();
+            this.doi4 = new System.Windows.Forms.PictureBox();
+            this.doi16 = new System.Windows.Forms.PictureBox();
+            this.doi15 = new System.Windows.Forms.PictureBox();
+            this.doi14 = new System.Windows.Forms.PictureBox();
+            this.doi13 = new System.Windows.Forms.PictureBox();
+            this.doi9 = new System.Windows.Forms.PictureBox();
+            this.doi12 = new System.Windows.Forms.PictureBox();
+            this.doi5 = new System.Windows.Forms.PictureBox();
+            this.doi7 = new System.Windows.Forms.PictureBox();
+            this.doi3 = new System.Windows.Forms.PictureBox();
+            this.doi2 = new System.Windows.Forms.PictureBox();
+            this.doi1 = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.dateNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.txbquochia = new System.Windows.Forms.TextBox();
@@ -59,6 +77,7 @@
             this.cbvitri = new System.Windows.Forms.ComboBox();
             this.cbCLB = new System.Windows.Forms.ComboBox();
             this.tbTenSearch = new System.Windows.Forms.TextBox();
+            this.piccauthu = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pnLichthidau = new System.Windows.Forms.Panel();
             this.tbVong = new System.Windows.Forms.TextBox();
@@ -69,43 +88,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.time = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.tàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đổiMậtKhẩuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuãtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.doi10 = new System.Windows.Forms.PictureBox();
-            this.doi6 = new System.Windows.Forms.PictureBox();
-            this.doi11 = new System.Windows.Forms.PictureBox();
-            this.doi8 = new System.Windows.Forms.PictureBox();
-            this.doi4 = new System.Windows.Forms.PictureBox();
-            this.doi16 = new System.Windows.Forms.PictureBox();
-            this.doi15 = new System.Windows.Forms.PictureBox();
-            this.doi14 = new System.Windows.Forms.PictureBox();
-            this.doi13 = new System.Windows.Forms.PictureBox();
-            this.doi9 = new System.Windows.Forms.PictureBox();
-            this.doi12 = new System.Windows.Forms.PictureBox();
-            this.doi5 = new System.Windows.Forms.PictureBox();
-            this.doi7 = new System.Windows.Forms.PictureBox();
-            this.doi3 = new System.Windows.Forms.PictureBox();
-            this.doi2 = new System.Windows.Forms.PictureBox();
-            this.doi1 = new System.Windows.Forms.PictureBox();
-            this.piccauthu = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataCauthu)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.pnLichthidau.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bangData)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.doi10)).BeginInit();
@@ -124,7 +117,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.doi3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.doi2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.doi1)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCauthu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.piccauthu)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.pnLichthidau.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bangData)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -156,6 +156,7 @@
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(1028, 686);
             this.tabControl2.TabIndex = 0;
+            this.tabControl2.Click += new System.EventHandler(this.tabControl2_Click);
             // 
             // tabPage3
             // 
@@ -195,6 +196,27 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1024, 667);
             this.panel5.TabIndex = 0;
+            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Quan_ly_bong_da.Properties.Resources.ball;
+            this.pictureBox3.Location = new System.Drawing.Point(447, 113);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(129, 128);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 19;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Quan_ly_bong_da.Properties.Resources._1067px_UEFA_Champions_League_logo_svg;
+            this.pictureBox1.Location = new System.Drawing.Point(447, 443);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(129, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
             // button2
             // 
@@ -207,6 +229,166 @@
             this.button2.Text = "Tạo mới giải đấu";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // doi10
+            // 
+            this.doi10.Location = new System.Drawing.Point(140, 353);
+            this.doi10.Name = "doi10";
+            this.doi10.Size = new System.Drawing.Size(129, 128);
+            this.doi10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.doi10.TabIndex = 15;
+            this.doi10.TabStop = false;
+            this.doi10.Click += new System.EventHandler(this.doi10_Click);
+            // 
+            // doi6
+            // 
+            this.doi6.Location = new System.Drawing.Point(4, 506);
+            this.doi6.Name = "doi6";
+            this.doi6.Size = new System.Drawing.Size(129, 128);
+            this.doi6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi6.TabIndex = 14;
+            this.doi6.TabStop = false;
+            this.doi6.Click += new System.EventHandler(this.doi6_Click);
+            // 
+            // doi11
+            // 
+            this.doi11.Location = new System.Drawing.Point(140, 180);
+            this.doi11.Name = "doi11";
+            this.doi11.Size = new System.Drawing.Size(129, 128);
+            this.doi11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi11.TabIndex = 13;
+            this.doi11.TabStop = false;
+            this.doi11.Click += new System.EventHandler(this.doi11_Click);
+            // 
+            // doi8
+            // 
+            this.doi8.Location = new System.Drawing.Point(140, 506);
+            this.doi8.Name = "doi8";
+            this.doi8.Size = new System.Drawing.Size(129, 128);
+            this.doi8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi8.TabIndex = 12;
+            this.doi8.TabStop = false;
+            this.doi8.Click += new System.EventHandler(this.doi8_Click);
+            // 
+            // doi4
+            // 
+            this.doi4.Location = new System.Drawing.Point(735, 506);
+            this.doi4.Name = "doi4";
+            this.doi4.Size = new System.Drawing.Size(129, 128);
+            this.doi4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi4.TabIndex = 11;
+            this.doi4.TabStop = false;
+            this.doi4.Click += new System.EventHandler(this.doi4_Click);
+            // 
+            // doi16
+            // 
+            this.doi16.Location = new System.Drawing.Point(735, 180);
+            this.doi16.Name = "doi16";
+            this.doi16.Size = new System.Drawing.Size(129, 128);
+            this.doi16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi16.TabIndex = 10;
+            this.doi16.TabStop = false;
+            this.doi16.Click += new System.EventHandler(this.doi16_Click);
+            // 
+            // doi15
+            // 
+            this.doi15.Location = new System.Drawing.Point(735, 353);
+            this.doi15.Name = "doi15";
+            this.doi15.Size = new System.Drawing.Size(129, 128);
+            this.doi15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi15.TabIndex = 9;
+            this.doi15.TabStop = false;
+            this.doi15.Click += new System.EventHandler(this.doi15_Click);
+            // 
+            // doi14
+            // 
+            this.doi14.Location = new System.Drawing.Point(889, 28);
+            this.doi14.Name = "doi14";
+            this.doi14.Size = new System.Drawing.Size(129, 128);
+            this.doi14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi14.TabIndex = 8;
+            this.doi14.TabStop = false;
+            this.doi14.Click += new System.EventHandler(this.doi14_Click);
+            // 
+            // doi13
+            // 
+            this.doi13.Location = new System.Drawing.Point(735, 28);
+            this.doi13.Name = "doi13";
+            this.doi13.Size = new System.Drawing.Size(129, 128);
+            this.doi13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi13.TabIndex = 7;
+            this.doi13.TabStop = false;
+            this.doi13.Click += new System.EventHandler(this.doi13_Click);
+            // 
+            // doi9
+            // 
+            this.doi9.Location = new System.Drawing.Point(889, 506);
+            this.doi9.Name = "doi9";
+            this.doi9.Size = new System.Drawing.Size(129, 128);
+            this.doi9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi9.TabIndex = 6;
+            this.doi9.TabStop = false;
+            this.doi9.Click += new System.EventHandler(this.doi9_Click);
+            // 
+            // doi12
+            // 
+            this.doi12.Location = new System.Drawing.Point(889, 180);
+            this.doi12.Name = "doi12";
+            this.doi12.Size = new System.Drawing.Size(129, 128);
+            this.doi12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi12.TabIndex = 5;
+            this.doi12.TabStop = false;
+            this.doi12.Click += new System.EventHandler(this.doi12_Click);
+            // 
+            // doi5
+            // 
+            this.doi5.Location = new System.Drawing.Point(140, 28);
+            this.doi5.Name = "doi5";
+            this.doi5.Size = new System.Drawing.Size(129, 128);
+            this.doi5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi5.TabIndex = 4;
+            this.doi5.TabStop = false;
+            this.doi5.Click += new System.EventHandler(this.doi5_Click);
+            // 
+            // doi7
+            // 
+            this.doi7.Location = new System.Drawing.Point(892, 353);
+            this.doi7.Name = "doi7";
+            this.doi7.Size = new System.Drawing.Size(129, 128);
+            this.doi7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi7.TabIndex = 3;
+            this.doi7.TabStop = false;
+            this.doi7.Click += new System.EventHandler(this.doi7_Click);
+            // 
+            // doi3
+            // 
+            this.doi3.Location = new System.Drawing.Point(3, 353);
+            this.doi3.Name = "doi3";
+            this.doi3.Size = new System.Drawing.Size(129, 128);
+            this.doi3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi3.TabIndex = 2;
+            this.doi3.TabStop = false;
+            this.doi3.Click += new System.EventHandler(this.doi3_Click);
+            // 
+            // doi2
+            // 
+            this.doi2.Location = new System.Drawing.Point(5, 180);
+            this.doi2.Name = "doi2";
+            this.doi2.Size = new System.Drawing.Size(129, 128);
+            this.doi2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi2.TabIndex = 1;
+            this.doi2.TabStop = false;
+            this.doi2.Click += new System.EventHandler(this.doi2_Click);
+            // 
+            // doi1
+            // 
+            this.doi1.Location = new System.Drawing.Point(5, 28);
+            this.doi1.Name = "doi1";
+            this.doi1.Size = new System.Drawing.Size(129, 128);
+            this.doi1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.doi1.TabIndex = 0;
+            this.doi1.TabStop = false;
+            this.doi1.Click += new System.EventHandler(this.doi1_Click);
             // 
             // tabPage4
             // 
@@ -480,6 +662,17 @@
             this.tbTenSearch.Size = new System.Drawing.Size(714, 22);
             this.tbTenSearch.TabIndex = 0;
             // 
+            // piccauthu
+            // 
+            this.piccauthu.Image = global::Quan_ly_bong_da.Properties.Resources.no_pic;
+            this.piccauthu.Location = new System.Drawing.Point(799, 97);
+            this.piccauthu.Name = "piccauthu";
+            this.piccauthu.Size = new System.Drawing.Size(215, 307);
+            this.piccauthu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.piccauthu.TabIndex = 4;
+            this.piccauthu.TabStop = false;
+            this.piccauthu.Click += new System.EventHandler(this.piccauthu_Click);
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.pnLichthidau);
@@ -592,23 +785,6 @@
             this.time.TabIndex = 1;
             this.time.Text = "Quản lý giải bóng đá";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(373, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(211, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Quản lý giải bóng đá";
-            // 
-            // timer1
-            // 
-            this.timer1.Enabled = true;
-            this.timer1.Interval = 500;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -633,206 +809,32 @@
             // đổiMậtKhẩuToolStripMenuItem
             // 
             this.đổiMậtKhẩuToolStripMenuItem.Name = "đổiMậtKhẩuToolStripMenuItem";
-            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.đổiMậtKhẩuToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.đổiMậtKhẩuToolStripMenuItem.Text = "Đổi mật khẩu";
             this.đổiMậtKhẩuToolStripMenuItem.Click += new System.EventHandler(this.đổiMậtKhẩuToolStripMenuItem_Click);
             // 
             // đăngXuãtToolStripMenuItem
             // 
             this.đăngXuãtToolStripMenuItem.Name = "đăngXuãtToolStripMenuItem";
-            this.đăngXuãtToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
+            this.đăngXuãtToolStripMenuItem.Size = new System.Drawing.Size(173, 26);
             this.đăngXuãtToolStripMenuItem.Text = "Đăng xuãt";
             // 
-            // pictureBox3
+            // label1
             // 
-            this.pictureBox3.Image = global::Quan_ly_bong_da.Properties.Resources.ball;
-            this.pictureBox3.Location = new System.Drawing.Point(447, 113);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(129, 128);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 19;
-            this.pictureBox3.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(373, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(211, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Quản lý giải bóng đá";
             // 
-            // pictureBox1
+            // timer1
             // 
-            this.pictureBox1.Image = global::Quan_ly_bong_da.Properties.Resources._1067px_UEFA_Champions_League_logo_svg;
-            this.pictureBox1.Location = new System.Drawing.Point(447, 443);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(129, 128);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
-            // 
-            // doi10
-            // 
-            this.doi10.Location = new System.Drawing.Point(140, 353);
-            this.doi10.Name = "doi10";
-            this.doi10.Size = new System.Drawing.Size(129, 128);
-            this.doi10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.doi10.TabIndex = 15;
-            this.doi10.TabStop = false;
-            this.doi10.Click += new System.EventHandler(this.doi10_Click);
-            // 
-            // doi6
-            // 
-            this.doi6.Location = new System.Drawing.Point(4, 506);
-            this.doi6.Name = "doi6";
-            this.doi6.Size = new System.Drawing.Size(129, 128);
-            this.doi6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi6.TabIndex = 14;
-            this.doi6.TabStop = false;
-            this.doi6.Click += new System.EventHandler(this.doi6_Click);
-            // 
-            // doi11
-            // 
-            this.doi11.Location = new System.Drawing.Point(140, 180);
-            this.doi11.Name = "doi11";
-            this.doi11.Size = new System.Drawing.Size(129, 128);
-            this.doi11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi11.TabIndex = 13;
-            this.doi11.TabStop = false;
-            this.doi11.Click += new System.EventHandler(this.doi11_Click);
-            // 
-            // doi8
-            // 
-            this.doi8.Location = new System.Drawing.Point(140, 506);
-            this.doi8.Name = "doi8";
-            this.doi8.Size = new System.Drawing.Size(129, 128);
-            this.doi8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi8.TabIndex = 12;
-            this.doi8.TabStop = false;
-            this.doi8.Click += new System.EventHandler(this.doi8_Click);
-            // 
-            // doi4
-            // 
-            this.doi4.Location = new System.Drawing.Point(735, 506);
-            this.doi4.Name = "doi4";
-            this.doi4.Size = new System.Drawing.Size(129, 128);
-            this.doi4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi4.TabIndex = 11;
-            this.doi4.TabStop = false;
-            this.doi4.Click += new System.EventHandler(this.doi4_Click);
-            // 
-            // doi16
-            // 
-            this.doi16.Location = new System.Drawing.Point(735, 180);
-            this.doi16.Name = "doi16";
-            this.doi16.Size = new System.Drawing.Size(129, 128);
-            this.doi16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi16.TabIndex = 10;
-            this.doi16.TabStop = false;
-            this.doi16.Click += new System.EventHandler(this.doi16_Click);
-            // 
-            // doi15
-            // 
-            this.doi15.Location = new System.Drawing.Point(735, 353);
-            this.doi15.Name = "doi15";
-            this.doi15.Size = new System.Drawing.Size(129, 128);
-            this.doi15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi15.TabIndex = 9;
-            this.doi15.TabStop = false;
-            this.doi15.Click += new System.EventHandler(this.doi15_Click);
-            // 
-            // doi14
-            // 
-            this.doi14.Location = new System.Drawing.Point(889, 28);
-            this.doi14.Name = "doi14";
-            this.doi14.Size = new System.Drawing.Size(129, 128);
-            this.doi14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi14.TabIndex = 8;
-            this.doi14.TabStop = false;
-            this.doi14.Click += new System.EventHandler(this.doi14_Click);
-            // 
-            // doi13
-            // 
-            this.doi13.Location = new System.Drawing.Point(735, 28);
-            this.doi13.Name = "doi13";
-            this.doi13.Size = new System.Drawing.Size(129, 128);
-            this.doi13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi13.TabIndex = 7;
-            this.doi13.TabStop = false;
-            this.doi13.Click += new System.EventHandler(this.doi13_Click);
-            // 
-            // doi9
-            // 
-            this.doi9.Location = new System.Drawing.Point(889, 506);
-            this.doi9.Name = "doi9";
-            this.doi9.Size = new System.Drawing.Size(129, 128);
-            this.doi9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi9.TabIndex = 6;
-            this.doi9.TabStop = false;
-            this.doi9.Click += new System.EventHandler(this.doi9_Click);
-            // 
-            // doi12
-            // 
-            this.doi12.Location = new System.Drawing.Point(889, 180);
-            this.doi12.Name = "doi12";
-            this.doi12.Size = new System.Drawing.Size(129, 128);
-            this.doi12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi12.TabIndex = 5;
-            this.doi12.TabStop = false;
-            this.doi12.Click += new System.EventHandler(this.doi12_Click);
-            // 
-            // doi5
-            // 
-            this.doi5.Location = new System.Drawing.Point(140, 28);
-            this.doi5.Name = "doi5";
-            this.doi5.Size = new System.Drawing.Size(129, 128);
-            this.doi5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi5.TabIndex = 4;
-            this.doi5.TabStop = false;
-            this.doi5.Click += new System.EventHandler(this.doi5_Click);
-            // 
-            // doi7
-            // 
-            this.doi7.Location = new System.Drawing.Point(892, 353);
-            this.doi7.Name = "doi7";
-            this.doi7.Size = new System.Drawing.Size(129, 128);
-            this.doi7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi7.TabIndex = 3;
-            this.doi7.TabStop = false;
-            this.doi7.Click += new System.EventHandler(this.doi7_Click);
-            // 
-            // doi3
-            // 
-            this.doi3.Location = new System.Drawing.Point(3, 353);
-            this.doi3.Name = "doi3";
-            this.doi3.Size = new System.Drawing.Size(129, 128);
-            this.doi3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi3.TabIndex = 2;
-            this.doi3.TabStop = false;
-            this.doi3.Click += new System.EventHandler(this.doi3_Click);
-            // 
-            // doi2
-            // 
-            this.doi2.Location = new System.Drawing.Point(5, 180);
-            this.doi2.Name = "doi2";
-            this.doi2.Size = new System.Drawing.Size(129, 128);
-            this.doi2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi2.TabIndex = 1;
-            this.doi2.TabStop = false;
-            this.doi2.Click += new System.EventHandler(this.doi2_Click);
-            // 
-            // doi1
-            // 
-            this.doi1.Location = new System.Drawing.Point(5, 28);
-            this.doi1.Name = "doi1";
-            this.doi1.Size = new System.Drawing.Size(129, 128);
-            this.doi1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.doi1.TabIndex = 0;
-            this.doi1.TabStop = false;
-            this.doi1.Click += new System.EventHandler(this.doi1_Click);
-            // 
-            // piccauthu
-            // 
-            this.piccauthu.Image = global::Quan_ly_bong_da.Properties.Resources.no_pic;
-            this.piccauthu.Location = new System.Drawing.Point(799, 97);
-            this.piccauthu.Name = "piccauthu";
-            this.piccauthu.Size = new System.Drawing.Size(215, 307);
-            this.piccauthu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.piccauthu.TabIndex = 4;
-            this.piccauthu.TabStop = false;
-            this.piccauthu.Click += new System.EventHandler(this.piccauthu_Click);
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // fMain
             // 
@@ -852,17 +854,6 @@
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataCauthu)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.pnLichthidau.ResumeLayout(false);
-            this.pnLichthidau.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bangData)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.doi10)).EndInit();
@@ -881,7 +872,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.doi3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.doi2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.doi1)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataCauthu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.piccauthu)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.pnLichthidau.ResumeLayout(false);
+            this.pnLichthidau.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bangData)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }

@@ -81,6 +81,7 @@ namespace Quan_ly_bong_da
 
         private void button2_Click(object sender, EventArgs e)
         {
+            fMain f = new fMain();
             string stringghiban = null;
             if (int.TryParse(tisoNha.Text,out int tm)&&int.TryParse(tisoKhach.Text,out int tm2))
             {
@@ -117,6 +118,7 @@ namespace Quan_ly_bong_da
                     sql.IUD(up[i]);
                 }
                 MessageBox.Show("Cập nhật");
+                f.fMain_Load(sender, e);
                 DataTable table = DataGrid.BangData("SELECT DsGhiban1,DsGhiban2 FROM TranDauTest") ;
                 DataRow dataRow;
                 for (int i = 0; i < 240; i++)
@@ -158,6 +160,7 @@ namespace Quan_ly_bong_da
                     
                 }
             }
+            
         }
     }
 }

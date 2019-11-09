@@ -25,7 +25,7 @@ namespace Quan_ly_bong_da
         {
             move = 0;
         }
-        private void fMain_Load(object sender, EventArgs e)
+        public void fMain_Load(object sender, EventArgs e)
         {
             cbChon.Text = "Bảng xếp hạng";
             time.Text = DateTime.Now.ToLongTimeString();
@@ -195,6 +195,8 @@ namespace Quan_ly_bong_da
                 loadingTao f = new loadingTao();
                 f.ShowDialog();
                 MessageBox.Show("Tạo thành công");
+                fMain_Load(sender, e);
+                cbChon_SelectedIndexChanged(sender, e);
             }
             }
 
@@ -330,6 +332,16 @@ namespace Quan_ly_bong_da
         {
             DoiMK f = new DoiMK();
             f.ShowDialog();
+        }
+
+        private void tabControl2_Click(object sender, EventArgs e)
+        {
+            fMain_Load(sender, e);
+        }
+
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+          
         }
 
         private void panel2_MouseMove(object sender, MouseEventArgs e)
