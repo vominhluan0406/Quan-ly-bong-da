@@ -344,6 +344,11 @@ namespace Quan_ly_bong_da
           
         }
 
+        private void đăngXuãtToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void panel2_MouseMove(object sender, MouseEventArgs e)
         {
             if (move == 1)
